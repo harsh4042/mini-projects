@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>survey form</title>
+  <!-- Css <style></style> comes under the <head></head>  -->
+  <link rel="stylesheet" href="survey.css" type="text/css">
+  <!-- ICON  -->
+  <!-- <link rel="ICON" href="download.png"> -->
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to this Small Survey!</h1>
+    <br />
+    <br />
+    <a href="mailto:bagulharshal456@gmail.com">Email me</a>
+
+    <i>
+      <h3>Let us know how we can improve our services</h3>
+    </i>
+  </header>
+
+  <hr />
+  <div>
+    <form action="survay.php">
+      <!-- <h4><b>Name:-</b>  <input type="text" placeholder="Enter your name"></h4> -->
+
+      <label for="name">Name:-</label>
+      <input type="text" placeholder="Enter you name" />
+      <br />
+      <br />
+
+      <!-- VVIMP here you can use double <br> tag to increase the line space  -->
+
+      <label for="Email">Email:-</label>
+      <input type="text" placeholder="Enter you email" />
+      <br />
+      <br />
+
+      <label for="Age">Age:-</label>
+      <input type="text" placeholder="Enter your Age" />
+      <br />
+      <br />
+
+      <label for="birthdate">Birthdate :- </label>
+      <input type="date" placeholder="Enter your Birthdate">
+      <br>
+      <br>
+
+      <b>Select your Current Status:-</b>
+      <select name="Status" id="Status">
+        <option value="no-car">Select your Status</option>
+        <option value="Student">Student</option>
+        <option value="Employee">Employee</option>
+        <option value="Stakeholder">Stakeholder</option>
+      </select>
+      <br />
+      <br />
+      <br />
+
+      <b>Are you using our services for first time?</b>
+      <br />
+      <br />
+
+      <label for="yes">
+        <input type="radio" id="yes" name="no" value="yes" /> Yes
+      </label>
+
+      <br />
+
+      <label for="no">
+        <input type="radio" id="no" name="no" value="no" /> No
+      </label>
+
+      <br />
+      <br />
+      <br />
+
+      <b>Things whould you like to add in our services</b>
+      <br />
+      <br />
+
+      <input type="checkbox" id="videos" name="videos" />
+      <label for="scales">Videos</label>
+      <br />
+      <input type="checkbox" id="images" name="Images" />
+      <label for="scales">Images</label>
+      <br />
+      <input type="checkbox" id="gallary" name="gallary" />
+      <label for="scales">Gallary</label>
+
+
+      <br />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+
+</html>
