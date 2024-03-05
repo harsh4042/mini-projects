@@ -1,0 +1,50 @@
+* {
+
+    margin: 3px;
+    padding: 10px;
+    background-color: antiquewhite;
+
+}
+
+main {
+
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+ul {
+    position: fixed;
+    margin-top: 90px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+footer {
+
+    text-align: center;
+
+}
+
+#section1 {
+    border: 2px solid black;
+    background-color: cadetblue;
+}
+
+#section2 {
+    border: 2px solid black;
+    background-color: cadetblue;
+}
+
+#section3 {
+    border: 2px solid black;
+    background-color: cadetblue;
+}
+
+#section4 {
+    border: 2px solid black;
+    background-color: cadetblue;
+}

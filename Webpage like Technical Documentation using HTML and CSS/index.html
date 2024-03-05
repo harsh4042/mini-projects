@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+    <h1>Technical Documentation about Python</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section1">What’s New In Python 3.12</a></li>
+                <li><a href="#section2">The Python Standard Library</a></li>
+                <li><a href="#section3">Packaging Python libraries and tools</a></li>
+                <li><a href="#section4">Python Packaging Authority</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+
+        <section id="section1">
+
+            <h2>What’s New In Python 3.12</h2>
+            <p>Python 3.12 is the latest stable release of the Python programming language, with a mix of changes to the
+                language and the standard library. The library changes focus on cleaning up deprecated APIs, usability,
+                and correctness. Of note, the distutils package has been removed from the standard library. Filesystem
+                support in os and pathlib has seen a number of improvements, and several modules have better
+                performance.</p>
+
+            <p>The language changes focus on usability, as f-strings have had many limitations removed and ‘Did you mean
+                …’ suggestions continue to improve. The new type parameter syntax and type statement improve ergonomics
+                for using generic types and type aliases with static type checkers.</p>
+
+            <p>This article doesn’t attempt to provide a complete specification of all new features, but instead gives a
+                convenient overview. For full details, you should refer to the documentation, such as the Library
+                Reference and Language Reference. If you want to understand the complete implementation and design
+                rationale for a change, refer to the PEP for a particular new feature; but note that PEPs usually are
+                not kept up-to-date once a feature has been fully implemented.</p>
+        </section>
+        <hr>
+        <section id="section2">
+
+            <h2>The Python Standard Library</h2>
+            <p>While The Python Language Reference describes the exact syntax and semantics of the Python language, this
+                library reference manual describes the standard library that is distributed with Python. It also
+                describes some of the optional components that are commonly included in Python distributions.</p>
+
+            <p>Python’s standard library is very extensive, offering a wide range of facilities as indicated by the long
+                table of contents listed below. The library contains built-in modules (written in C) that provide access
+                to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as
+                well as modules written in Python that provide standardized solutions for many problems that occur in
+                everyday programming. Some of these modules are explicitly designed to encourage and enhance the
+                portability of Python programs by abstracting away platform-specifics into platform-neutral APIs.</p>
+
+            <p>The Python installers for the Windows platform usually include the entire standard library and often also
+                include many additional components. For Unix-like operating systems Python is normally provided as a
+                collection of packages, so it may be necessary to use the packaging tools provided with the operating
+                system to obtain some or all of the optional components.</p>
+        </section>
+        <hr>
+        <section id="section3">
+
+            <h2>Packaging Python libraries and tools</h2>
+            <p>You may have heard about PyPI, setup.py, and wheel files. These are just a few of the tools Python’s
+                ecosystem provides for distributing Python code to developers, which you can read about in Packaging and
+                distributing projects.</p>
+
+            <p>The following approaches to packaging are meant for libraries and tools used by technical audience in a
+                development setting. If you’re looking for ways to package Python for a non-technical audience and/or a
+                production setting, skip ahead to Packaging Python applications.</p>
+
+            <p>A Python file, provided it only relies on the standard library, can be redistributed and reused. You will
+                also need to ensure it’s written for the right version of Python, and only relies on the standard
+                library.
+
+                This is great for sharing simple scripts and snippets between people who both have compatible Python
+                versions (such as via email, StackOverflow, or GitHub gists). There are even some entire Python
+                libraries that offer this as an option, such as bottle.py and boltons.
+
+                However, this pattern won’t scale for projects that consist of multiple files, need additional
+                libraries, or need a specific version of Python, hence the options below.</p>
+
+        </section>
+        <hr>
+        <section id="section4">
+            <h2>Python Packaging Authority</h2>
+            <p>The Python Packaging Authority (PyPA) is a working group that maintains a core set of software projects
+                used in Python packaging.</p>
+
+            <p>The software developed through the PyPA is used to package, share, and install Python software and to
+                interact with indexes of downloadable Python software such as PyPI, the Python Package Index. Click the
+                logo below to download pip, the most prominent software used to interact with PyPI.</p>
+
+            <img src="pypi-logo.svg" height="200px" width="200px">
+
+            <p>The PyPA publishes the Python Packaging User Guide, which is the authoritative resource on how to
+                package, publish, and install Python projects using current tools. The User Guide provides a user
+                introduction to packaging, and explains how to use these tools. In case you need to package Python with
+                other languages (for example, in a scientific Python package), the user guide also offers basic
+                information about and links to available third-party packaging options (for example, conda-forge).</p>
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <b> &copy; 2024 Technical Documentation</b>
+    </footer>
+
+</body>
+
+</html>
