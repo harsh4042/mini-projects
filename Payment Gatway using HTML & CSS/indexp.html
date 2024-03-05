@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between ; /* Change from space-around to space-between */
+}
+
+#billinfo,
+#payinfo {
+  flex: 1;
+  max-width: 602px;
+  margin: 61px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="date"] {
+  width: calc(100% - 16px);
+}
+
+#cardino {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+    
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Payment Information</h1>
+
+    </header>
+
+    <div class="cont">
+    <div id="billinfo">
+    
+        <h2>Billing Address</h2>
+        <br>
+    
+        <form action="get.php">
+            
+      <label for="name">Name:-</label>
+      <input type="text" placeholder="Enter you name" />
+      <br />
+      <br />
+    
+      <label for="Email">Email:-</label>
+      <input type="text" placeholder="Enter you email" />
+      <br />
+      <br />
+
+      <label for="address">Address:-</label>
+      <input type="text" placeholder="Enter you Address" />
+      <br />
+      <br />
+
+      <label for="city">City:-</label>
+      <input type="text" placeholder="Enter you City" />
+      <br />
+      <br />
+
+      <label for="state">State:-</label>
+      <input type="text" placeholder="Enter you State" />
+      <br />
+      <br />
+
+      <label for="zip code">Zip code:-</label>
+      <input type="number" placeholder="Enter you Zip code" />
+      <br />
+      <br />
+
+        </form>
+    
+    </div>
+
+    <div id="payinfo">
+
+        <h2>Payment</h2>
+        <br>
+
+        <div id="cardino">
+
+            Accepted Card
+            <br>
+            <img src="235-2355689_american-express-mastercard-and-visa-logos-visa.jpeg" height="50px" width="200px">
+        </div>
+        <br>
+
+        <form action="pay.php">
+
+      <label for="Credit Card Number">Credit Card Number:-</label>
+      <input type="text" placeholder="Enter you Credit Card No." />
+      <br />
+      <br />
+
+      <label for="Exp. Month_Year">Exp. Month & Year:-</label>
+      <input type="date" placeholder="Exp. Month & Year" />
+      <br />
+      <br />
+
+      <label for="CVV">CVV:-</label>
+      <input type="number" placeholder="Enter you CVV No." />
+      <br />
+      <br />
+
+    </form>
+
+    <div >
+        <input id="button" type="submit" value="Pay" />
+    
+        <input type="reset" value="Reset" />
+
+
+    </div>
+
+    </div>
+</div>
+
+    
+    <hr>
+    <footer>
+        <b> &copy; 2024 Harsh Bagul</b>
+    </footer>
+</body>
+</html>
